@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style> 
+    body{
+        background-color: cadetblue;
+       
+    }
+    .contianer{
+        background-color: black;
+        display: inline-block;
+        border-radius: 15px;
+        padding: 30px;
+       
+
+    }
+    .unorder{
+        color: blanchedalmond;
+        font-size: 30px;
+    }
+    .contianer h3{
+        font-size: 50px;
+        color:rgb(180, 126, 44);
+    }
+    .contianer ul li{
+        list-style: none;
+    }
+</style>
+</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="d-flex justify-content-center align-items-center">
+          <div class="contianer">
+        <h3 >This is Event listener</h3>
+            <ul class="unorder">
+                <li class="list-item">this is list button</li>
+                <li class="list-item">this is list button-2</li>
+                <li class="list-item">this is list button-3</li>
+                <li class="list-item">this is list button-4</li>
+            </ul>
+            <button type="button" onclick="click" class="btn btn-outline-primary">Click Me</button>
+    
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <script>
+        let buttonEv=document.querySelector('button.btn.btn-outline-primary').addEventListener("click","click()")
+
+
+        function click(){
+            // let container=document.querySelector('contianer');
+            console.log('button clicked');
+        }
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

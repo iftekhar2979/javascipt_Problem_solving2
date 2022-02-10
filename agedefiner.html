@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Definer</title>
+    <style>
+        body {
+            padding: 300px;
+            background-image: linear-gradient(45deg,rgb(31, 17, 27),rgb(33,38,45),rgb(45,55,14));
+        }
+
+        .btn {
+            font-size: 30px;
+            color: blueviolet;
+
+        }
+
+        .btn:hover {
+    
+            background-color: rgb(92, 31, 150), 146);
+            
+        }
+        #verify {
+            display: none;
+        }
+
+        #verify-under {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="eighteen-or-not">
+        <h2 style="font-size: 30px;text-align: center;">Are you 18</h2>
+        <button class="btn " id="over-18">Yes</button>
+        <button style="display: flex;align-items: center; justify-content: center;" class="btn " id="under-18">NO</button>
+    </div>
+    <h2 id="verify">he is 18</h2>
+    <h2 id="verify-under">he is under 18</h2>
+    <script>
+        const year = document.getElementById('eighteen-or-not');
+        const overButton = document.getElementById('over-18');
+        const displayBlockinVerify = document.getElementById("verify");
+        const displayBlockinVerifyUnder = document.getElementById("verify-under");
+
+        overButton.addEventListener("click" ,function(){
+            displayBlockinVerify.style.display="block"
+            year.style.display="none";
+        })
+        const underButton = document.getElementById('under-18');
+
+
+        underButton.addEventListener("click" ,function(){
+            displayBlockinVerifyUnder.style.display="block";
+            year.style.display="none";
+            
+        })
+
+
+       
+
+
+
+    </script>
+</body>
+
+</html>
